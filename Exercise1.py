@@ -15,9 +15,9 @@ def binary_search(array, x):
                 return binary_search_internal(middle + 1, finish)
         else:
             return -1
-    start=0
-    finish = len(array) - 1
-    return binary_search_internal(start,finish)
+    st=0
+    fin = len(array) - 1
+    return binary_search_internal(st,fin)
 
 
 
