@@ -1,3 +1,6 @@
+# Uses an internal (nested) function to perform a recursive binary search.
+# The inner function handles the search logic while accessing the outer
+# function’s variables, keeping the code clean and well-organized.
 
 def binary_search(array, x):
 
@@ -13,7 +16,7 @@ def binary_search(array, x):
         else:
             return -1
     start=0
-    finish=len(array)
+    finish = len(array) - 1
     return binary_search_internal(start,finish)
 
 
