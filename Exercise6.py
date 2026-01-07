@@ -1,4 +1,4 @@
-import Exercise5
+from Exercise5 import bubble_sort
 
 ar = [
     [1, 4, 7, 2, 5],
@@ -11,14 +11,14 @@ ar = [
 
 def sort_by_row(array):
     for rows in range(len(array)):
-        Exercise5.bubble_sort(array[rows])
+        bubble_sort(array[rows])
 
 def sort_by_col(array):
     for i in range(len(array)):
         col_list = []
         for j in range(len(array)):
             col_list.append(array[j][i])
-        Exercise5.bubble_sort(col_list)
+        bubble_sort(col_list)
         for j in range(len(array)):
             array[j][i] = col_list[j]
 sort_by_row(ar)
